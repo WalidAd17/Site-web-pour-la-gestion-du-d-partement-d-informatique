@@ -1,0 +1,238 @@
+
+/* Fichier CSS pour la page index.html*/
+/*====================================*/
+
+
+*{
+    font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Les styles du header ------------------------------------------------------------*/
+header #image-1{
+    width: 100%;
+    height: 120px;
+}
+
+header div{
+    text-align: center;
+    background: linear-gradient(to bottom right,#FFF5CC 20%,#35A8B5);
+    padding: 1px;
+    margin: 0;
+    border: none;
+}
+
+header table{
+    width: 100%;
+}
+
+header table tr td{
+    text-align: center;
+    color: #001F3F;
+    padding: 10px 0px;
+}
+
+.ombre{
+    text-shadow: 1px 1px 3px #35A8B5;
+}
+
+
+
+
+/* Les styles du Navbar ------------------------------------------------------------*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #001F3F;
+    display: flex;
+    justify-content: center; 
+    z-index: 1000; 
+}
+  
+nav li {
+    margin: 0 50px;
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: #04AA6D;
+}
+  
+nav .active {
+    background-color: #04AA6D;
+}
+
+.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #555;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* Les styles de la Section : actualités ------------------------------------------------------------*/
+#actualites{
+    height: auto; 
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+#actualites h1{
+    text-align: center;
+}
+
+#actualites h2{
+    color: white;
+}
+
+#actualites div{
+    background-color: #001F3F;
+    padding: 30px 0;
+}
+
+#actualites table{
+    width: 100%;
+}
+
+#actualites table tr td{
+    text-align: center;
+    width: 25%;
+    cursor: pointer;
+}
+
+#image-1{
+    width:300px;
+}
+
+
+
+/* Les styles de la Section : formation ------------------------------------------------------------*/
+#formation{
+    height: auto; /* Taille dynamique dépendant du contenu */
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+#formation h1, #formation p{
+    text-align: center;
+}
+
+#formation h2{
+    color: black;
+}
+
+#formation table{
+    width: 90%;
+    margin: auto;
+}
+
+#formation table tr td{
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bg{
+    background: linear-gradient(to right,#FFF5CC 30%,#35A8B5);
+}
+
+#formation ul li{
+    color: #001F3F;
+    text-align: left;
+    margin: 5px;
+}
+
+.btn{
+    padding: 8px 15px;
+    background-color: #001F3F;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+/* Les styles du Footer : -------------------------------------------------------------------*/
+footer{
+    height: auto;
+    width: 100%;
+    margin: 50px 0 0 0;
+    background-color: #001F3F;
+    color: white;
+
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .box {
+    height: auto;
+    width: 33%;
+}
+
+footer hr{
+    width: 95%;
+}
+
+.box h2{
+    text-align: center;
+}
+
+.espace_entre_elts li{
+    padding: 15px 5px;
+}
+
+.espace_entre_elts li a{
+    text-decoration: none;
+    color: white;
+}
+
+#membres li{
+    padding: 5px 5px;
+}
+
+#infos-etudiants{
+    width:100%
+}
+
+#infos-etudiants tr td{
+    text-align: left;
+    color: white;
+}
+
+#infos-etudiants tr td span{
+    padding: 25px;
+    margin: 10px;
+}
+
+#contact{
+    width: 100%;
+}
+
+#contact tr td{
+    padding: 5px;
+    color: white;
+}
+
+#line{
+    width: 1300px;
+}
+
+#copyright{
+    text-align: center;
+    color: white;
+    padding: 8px;
+}

@@ -1,0 +1,294 @@
+/* Fichier CSS pour la page reclamation.html*/
+/*==========================================*/
+
+
+*{
+    font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Les styles du header ------------------------------------------------------------*/
+#image-1{
+    width: 100%;
+    height: 120px;
+}
+
+header div{
+    text-align: center;
+    background: linear-gradient(to bottom right,#FFF5CC 20%,#35A8B5);
+    padding: 1px;
+    margin: 0;
+    border: none;
+}
+
+header table{
+    width: 100%;
+}
+
+header table tr td{
+    text-align: center;
+    color: #001F3F;
+    padding: 10px 0px;
+}
+
+.ombre{
+    text-shadow: 1px 1px 3px #35A8B5; /* Ajout d'une ombre pour l'effet 3D */
+}
+
+
+/* Les styles du Navbar ------------------------------------------------------------*/
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    background-color: #001F3F; 
+    display: flex;
+    justify-content: center; 
+    z-index: 1000; 
+}
+  
+nav li {
+    margin: 0 50px;
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: #04AA6D;
+}
+  
+nav .active {
+    background-color: #04AA6D;
+}
+
+.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #555;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+
+
+/* Les styles de la Section : reclamation ------------------------------------------------------------*/
+
+#reclamation{
+    height: auto; 
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+#reclamation h1{
+    height: auto; 
+    text-align: center;
+}
+
+#reclamation #div-note{
+    background-color: #001F3F;
+    color: white;
+    padding: 10px 5px;
+    margin: 30px 0;
+}
+
+#reclamation #div-note p{
+    font-size: large;
+    text-align: center;
+}
+
+#reclamation #div-formulaire{
+    padding: 10px 5px;
+    margin: 30px 0;
+}
+
+#reclamation #div-formulaire form{
+    width: 60%;
+    margin: auto;
+    border: 3px solid #001F3F;
+    border-radius: 10%;
+    padding: 5px 30px;
+}
+
+#reclamation #div-formulaire form #entete-form{
+    text-align: center;
+}
+
+
+/* fieldset : info_personnelles*/
+#pour-etudiant{
+    display: none;
+}
+
+#reclamation #div-formulaire form #infos-perso{
+    margin: 15px 0;
+    border: 3px outset #001F3F;
+}
+
+#reclamation #div-formulaire form #infos-perso legend{
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+    color: #001F3F;
+}
+
+#reclamation #div-formulaire form #infos-perso table{
+    width: 90%;
+    margin: auto;
+}
+
+#reclamation #div-formulaire form #infos-perso table tr td{
+    padding: 10px 0;
+}
+
+#reclamation #div-formulaire form #infos-perso table tr td input{
+    width: 95%;
+    padding: 10px;
+}
+
+#reclamation #div-formulaire form #infos-perso table tr td select{
+    width: 97%;
+    padding: 10px;
+    border-color: #001F3F;
+}
+
+#reclamation #div-formulaire form #infos-perso table tr td select option{
+    font-weight: bold;
+    color: red;
+}
+
+
+/* fieldset : info_reclamation*/
+#reclamation #div-formulaire form #infos-reclamation{
+    margin: 15px 0;
+    border: 3px inset #001F3F;
+}
+
+#reclamation #div-formulaire form #infos-reclamation legend{
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+    color: #001F3F;
+}
+
+#reclamation #div-formulaire form #infos-reclamation table{
+    width: 90%;
+    margin: auto;
+}
+
+#reclamation #div-formulaire form #infos-reclamation table tr td{
+    padding: 10px 0;
+}
+
+#reclamation #div-formulaire form #infos-reclamation table tr td input , #reclamation #div-formulaire form #infos-reclamation table tr td textarea{
+    width: 97%;
+    padding: 10px;
+}
+
+#reclamation #div-formulaire form #pied-form{
+    text-align: center;
+}
+
+#reclamation #div-formulaire form #pied-form #envoyer{
+    width: 150px;
+    background-color: #001F3F;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#reclamation #div-formulaire form #pied-form #reinitialiser{
+    width: 150px;
+    background-color: white;
+    color: #001F3F;
+    padding: 10px;
+    margin: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Les styles du Footer : -------------------------------------------------------------------*/
+footer{
+    height: auto; 
+    width: 100%;
+    margin: 50px 0 0 0;
+    background-color: #001F3F;
+    color: white;
+
+}
+
+footer .container {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%;
+}
+
+footer .box {
+    height: auto;
+    width: 33%;
+}
+
+footer hr{
+    width: 85%;
+}
+
+footer .container .box h2{
+    text-align: center;
+}
+
+footer .container .box .espace_entre_elts li{
+    padding: 15px 5px;
+}
+
+footer .container .box .espace_entre_elts li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .container .box #membres li{
+    padding: 5px 5px;
+}
+
+footer #infos-etudiants{
+    width:100%
+}
+
+footer #infos-etudiants tr td{
+    text-align: left;
+    color: white;
+}
+
+footer #infos-etudiants tr td span{
+    padding: 25px;
+    margin: 10px;
+}
+
+footer #contact{
+    width: 100%;
+}
+
+footer #contact tr td{
+    padding: 5px;
+    color: white;
+}
+
+footer #line{
+    width: 1300px;
+}
+
+footer #copyright{
+    text-align: center;
+    color: white;
+    padding: 8px;
+}

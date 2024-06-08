@@ -1,0 +1,272 @@
+/* Fichier CSS pour la page edt.html*/
+/*====================================*/
+
+
+*{
+    font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Les styles du header ------------------------------------------------------------*/
+header #image-1{
+    width: 100%;
+    height: 120px;
+}
+
+header div{
+    text-align: center;
+    background: linear-gradient(to bottom right,#FFF5CC 20%,#35A8B5);
+    padding: 1px;
+    margin: 0;
+    border: none;
+}
+
+header table{
+    width: 100%;
+}
+
+header table tr td{
+    text-align: center;
+    color: #001F3F;
+    padding: 10px 0px;
+}
+
+.ombre{
+    text-shadow: 1px 1px 3px #35A8B5; /* Ajout d'une ombre pour l'effet 3D */
+}
+
+
+/* Les styles du Navbar ------------------------------------------------------------*/
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    background-color: #001F3F; 
+    display: flex;
+    justify-content: center; 
+    z-index: 1000; /* Assure que la navbar reste au-dessus du contenu */
+}
+  
+nav li {
+    margin: 0 50px;
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: #04AA6D;
+}
+  
+nav .active {
+    background-color: #04AA6D;
+}
+
+.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #555;     
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
+}
+
+
+/* Les styles de la Section : emplois du temps (edt) ------------------------------------------------------------*/
+#edt{
+    height: auto; 
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+#edt h1, #edt h4, #edt h3{
+    text-align: center;
+}
+
+#edt #div-note{
+    background-color: #001F3F;
+    color: white;
+    padding: 10px 5px;
+    margin: 30px 0;
+}
+
+#edt #div-note p{
+    font-size: large;
+    text-align: center;
+}
+
+#edt #div-note p span{
+    color: yellow;
+}
+
+#edt div{
+    padding: 5px;
+}
+
+
+#edt #annees{
+    width: 100%;
+    padding: 10px;
+}
+
+#edt #annees tr .rempli{
+    background: linear-gradient(to bottom right,#FFF5CC 20%,#35A8B5);  
+    border-radius: 50%;
+    width: 20%;
+    height: 160px;
+    padding: 10px 12px;
+    margin: 3px;
+}
+
+#edt #annees tr .rempli:hover{
+    background: linear-gradient(to bottom right,#35A8B5 20%,#FFF5CC);  
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+#edt #annees tr td ul li{
+    list-style-type: square;
+    font-weight: bold;
+    padding: 3px;
+}
+
+#edt #annees tr td ul li a{
+    text-decoration: none;
+    color: #001F3F;
+}
+
+#edt div table{
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#edt .bg-dark table tr td{
+    color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#edt .bg-light table tr td{
+    color: #001F3F;
+    border: 1px solid #001F3F;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#edt div table tr .separate-top{
+    border-top: 2px solid red;
+}
+
+
+#edt div table tr .heures{
+    color: rgb(197, 197, 0);
+}
+
+#edt div table tr .groupe{
+    color: rgb(255, 175, 2);
+}
+
+#edt div table tr .dejeuner{
+    background: linear-gradient(to bottom right,#FFF5CC 20%,#35A8B5);
+    width: 30px;
+}
+
+#edt div table tr .seance{
+    width: 230px;
+}
+
+.bg-dark{
+    background-color: #001F3F;
+    color: white;
+    border-radius: 5%;
+}
+
+.bg-light{
+    color: black;
+    background-color: rgb(214, 214, 214);
+    border-radius: 5%;
+}
+
+
+/* Les styles du Footer : -------------------------------------------------------------------*/
+footer{
+    height: auto; 
+    width: 100%;
+    margin: 50px 0 0 0;
+    background-color: #001F3F;
+    color: white;
+
+}
+
+footer .container {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .box {
+    height: auto;
+    width: 33%;
+}
+
+footer hr{
+    width: 85%;
+}
+
+footer .container .box h2{
+    text-align: center;
+}
+
+footer .container .box .espace_entre_elts li{
+    padding: 15px 5px;
+}
+
+footer .container .box .espace_entre_elts li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .container .box #membres li{
+    padding: 5px 5px;
+}
+
+footer #infos-etudiants{
+    width:100%
+}
+
+footer #infos-etudiants tr td{
+    text-align: left;
+    color: white;
+}
+
+footer #infos-etudiants tr td span{
+    padding: 25px;
+    margin: 10px;
+}
+
+footer #contact{
+    width: 100%;
+}
+
+footer #contact tr td{
+    padding: 5px;
+    color: white;
+}
+
+footer #line{
+    width: 1200px;
+}
+
+footer #copyright{
+    text-align: center;
+    color: white;
+    padding: 8px;
+}

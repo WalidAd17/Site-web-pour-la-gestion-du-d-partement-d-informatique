@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réclamation</title>
+    <link rel="stylesheet" href="css/reclamation.css">
+    <link rel="icon" href="images/logo-univ1.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img id="image-1" src="images/titre.png">
+        <div>
+            <h2>F A C U L T É &nbsp;&nbsp; D E S &nbsp;&nbsp; S C I E N C E S</h2>
+        </div>
+        <table>
+            <tr>
+                <td><img src="images/cropped-logo-univ1.png"></td>
+                <td><h1 class="ombre">Département d'Informatique</h1></td>
+                <td><img src="images/cropped-logo-univ1.png"></td>
+            </tr>
+        </table>
+    </header>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="index.html">Page d'accueil</a></li>
+            <li><a href="edt.html">Emplois du temps</a></li>
+            <li><a href="liste_etudiants.html">Liste des étudiants</a></li>
+            <li><a href="liste_prof.html">Liste des professeurs</a></li>
+            <li><a href="reclamation.html">Réclamation</a></li>
+        </ul>
+    </nav>
+
+    <section id="reclamation">
+        <h1>Réclamation</h1>
+        <div id="div-note">
+            <p><b>Si vous êtes un membre du département d'informatique, que vous soyez étudiant, professeur ou employé, veuillez utiliser le formulaire ci-dessous pour soumettre toute réclamation que vous pourriez avoir.</b></p>    
+        </div>
+        <div id="div-formulaire">
+            <form>
+                <div id="entete-form">
+                    <img src="images/reclamer.png" style="margin: auto;">
+                </div>
+                <fieldset id="infos-perso">
+                    <legend>Informations personnelles:</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="nom">Nom</label><br>
+                                <input type="text" id="nom" name="nom" placeholder="Saisissez votre nom..." required>
+                            </td>
+                            <td>
+                                <label for="prenom">Prénom</label><br>
+                                <input type="text" id="prenom" name="prenom" placeholder="Saisissez votre prénom..." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="personne">Vous êtes un</label>
+                                <select name="personne" id="personne" required>
+                                    <option value="prof">Professeur</option>
+                                    <option value="etudiant">Étudiant</option>
+                                    <option value="employe">Employé</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <table id="pour-etudiant">
+                        <tr>
+                            <td>
+                                <label for="matricule">Votre matricule</label>
+                                <input type="number" id="matricule" name="matricule" minlength="8" maxlength="12" required>
+                            </td>
+                            <td>
+                                <label for="annee_etude">Année d'étude</label>
+                                <select name="annee_etude" id="annee_etude" required>
+                                    <optgroup label="Licence">
+                                        <option value="l1">L1</option>
+                                        <option value="l2">L2</option>
+                                        <option value="l3">L3</option>
+                                    </optgroup>
+                                    <optgroup label="Master">
+                                        <option value="m1">M1</option>
+                                        <option value="m2">M2</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset id="infos-reclamation">
+                    <legend>La réclamation:</legend>
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <label for="objet">Objet</label>
+                                <input type="text" id="objet" name="objet" placeholder="Exemple : Problème de Connexion au Réseau Informatique" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="contenu">Votre réclamation</label>
+                                <textarea id="contenu" name="contenu" rows="10" cols="5" placeholder="Commencez votre réclamation..." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <div id="pied-form">
+                    <input type="reset" id="reinitialiser" name="reinitialiser" value="Réinitialiser">
+                    <input type="submit" id="envoyer" name="envoyer" value="Envoyer">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="box">
+                <h2>À propos</h2>
+                    <hr>
+                    <ul class="espace_entre_elts">
+                        <li><b><u>Développeur :</u></b> &nbsp; ANNAD Walid</li>
+                        <li><b><u>Contactez-moi :</u></b> &nbsp; walidannad17@gmail.com</li>
+                        <li><b><u>Projet :</u></b> &nbsp;Réalisation d'un Site web statique pour la gestion du Département d'Informatique de la Faculté des sciences de l'Université d'Alger 1.</li>        
+                        <li><b><u>Date de réalisation :</u></b>&nbsp; Avril 2024</li>
+                    </ul>
+            </div>
+            <div class="box">
+                <h2>Autres liens importants</h2>
+                <hr>
+                <ul class="espace_entre_elts">
+                    <li><a href="https://www.univ-alger.dz/">Université d'Alger 1</a></li>
+                    <li><a href="http://sciences.univ-alger.dz/">Faculté des Sciences</a></li>
+                    <li><a href="https://www.mesrs.dz/">Ministère de l'Enseignement Superieur et de la Recherche Scientifique (MESRS)</a></li>
+                    <li><a href="https://www.mesrs.dz/index.php/fr/progres/">PROGRES</a></li>
+                    <li><a href="https://cours-sci.univ-alger.dz/">Cours en ligne</a></li>
+                    <li><a href="apropos.html">Notre équipe</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Contact</h2>
+                <hr>
+                <table id="contact">
+                    <tr>
+                        <td><img src="images/localisation.png"></td>
+                        <td>02 Rue Didouche Mourad, Alger</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><a href="https://goo.gl/maps/GuefuXA1XmmREtEt7" class="single_ad_300x250" target="_blank" rel="nofollow"><img src="https://www.univ-alger.dz/wp-content/uploads/2023/01/Capture.png" width="350" height="200" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/email-24px.png"></td>
+                        <td>contact@univ_alger.dz</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/tel.png"></td>
+                        <td>021&nbsp;63&nbsp;77&nbsp;65</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/fax.png"></td>
+                        <td>021&nbsp;63&nbsp;77&nbsp;65</td>
+                    </tr>
+
+                </table>
+                
+            </div>
+        </div>
+        <br>
+        <hr id="line">
+        <div id="copyright">
+            <i>Université d'Alger 1 - Faculté des sciences : Département d'Informatique &copy Copyright - ANNAD WALID 2024. All Rights Reserved. </i>
+        </div>
+        <br>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

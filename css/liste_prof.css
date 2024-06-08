@@ -1,0 +1,218 @@
+/* Fichier CSS pour la page edt.html*/
+/*====================================*/
+
+
+*{
+    font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Les styles du header ------------------------------------------------------------*/
+#image-1{
+    width: 100%;
+    height: 120px;
+}
+
+header div{
+    text-align: center;
+    background: linear-gradient(to bottom right,#FFF5CC 20%,#35A8B5);
+    padding: 1px;
+    margin: 0;
+    border: none;
+}
+
+header table{
+    width: 100%;
+}
+
+header table tr td{
+    text-align: center;
+    color: #001F3F;
+    padding: 10px 0px;
+}
+
+.ombre{
+    text-shadow: 1px 1px 3px #35A8B5; /* Ajout d'une ombre pour l'effet 3D */
+}
+
+
+/* Les styles du Navbar ------------------------------------------------------------*/
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    background-color: #001F3F; 
+    display: flex;
+    justify-content: center; 
+    z-index: 1000; 
+}
+  
+nav li {
+    margin: 0 50px;
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: #04AA6D;
+}
+  
+nav .active {
+    background-color: #04AA6D;
+}
+
+.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #555; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* Les styles de la section : liste des profs --------------------------------------------------------*/
+#liste_profs{
+    height: auto; 
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+#liste_profs h1{
+    text-align: center;
+}
+
+#liste_profs #div-note{
+    background-color: #001F3F;
+    color: white;
+    padding: 10px 5px;
+    margin: 30px 0;
+}
+
+#liste_profs #div-note p{
+    font-size: large;
+    text-align: center;
+}
+
+#liste_profs #div-note p span{
+    color: yellow;
+}
+
+#liste_profs div{
+    padding: 5px;
+}
+
+#liste_profs table{
+    width: 90%;
+    margin: auto;
+    border: 1px solid #001F3F;
+    border-collapse: collapse;
+}
+
+#liste_profs table tr:nth-child(even) {
+    background: linear-gradient(to bottom right,#35A8B5 ,#FFF5CC);
+}
+
+#liste_profs table tr:nth-child(odd) {
+    background-color: white;
+}
+
+#liste_profs table tr th{
+    border: 1px solid #001F3F;
+    background-color: #001F3F;
+    color: white;
+    border-collapse: collapse;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#liste_profs table tr td{
+    border: 1px solid #001F3F;
+    border-collapse: collapse;
+    padding: 15px 10px;;
+    font-weight: bold;
+}
+
+
+/* Les styles du Footer : -------------------------------------------------------------------*/
+footer{
+    height: auto;
+    width: 100%;
+    margin: 50px 0 0 0;
+    background-color: #001F3F;
+    color: white;
+
+}
+
+footer .container {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%;
+}
+
+footer .box {
+    height: auto;
+    width: 33%;
+}
+
+footer hr{
+    width: 85%;
+}
+
+footer .container .box h2{
+    text-align: center;
+}
+
+footer .container .box .espace_entre_elts li{
+    padding: 15px 5px;
+}
+
+footer .container .box .espace_entre_elts li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .container .box #membres li{
+    padding: 5px 5px;
+}
+
+footer #infos-etudiants{
+    width:100%
+}
+
+footer #infos-etudiants tr td{
+    text-align: left;
+    color: white;
+}
+
+footer #infos-etudiants tr td span{
+    padding: 25px;
+    margin: 10px;
+}
+
+footer #contact{
+    width: 100%;
+}
+
+footer #contact tr td{
+    padding: 5px;
+    color: white;
+}
+
+footer #line{
+    width: 1300px;
+}
+
+footer #copyright{
+    text-align: center;
+    color: white;
+    padding: 8px;
+}
